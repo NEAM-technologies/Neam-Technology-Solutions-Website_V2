@@ -503,6 +503,50 @@ h6 {
     margin-bottom: 30px;
   }
 }
+
+/*--------------------------------------------------------------
+# Login 
+/*--------------------------------------------------------------*/
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .login-container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .login-container h2 {
+      text-align: center;
+    }
+    .login-container label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #cc1616;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-container input[type="submit"]:hover {
+      background-color: #cc1616;
+    }
  
 /*--------------------------------------------------------------
 # Sections General
