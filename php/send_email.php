@@ -62,6 +62,8 @@ if(isset($_POST['email'])) {
     // sends email
     mail($to, $subject, $email_message, $headers);
 
+    header("Location: index.html"); // Replace "thank_you.html" with your actual thank you page URL
+
     // Sends an automated response to the client
     $email_subject = "Thank you for contacting us!";
     $email_body = "Thank you for reaching out to NEAM Technologies! We greatly appreciate your interest in our company and we are thrilled to hear from you. Rest assured that your message has been received and our dedicated team is diligently reviewing and preparing a response to your inquiry. We understand the value of your time and we are committed to providing you with the best possible service. In the meantime, we invite you to explore our website to learn more about our comprehensive services and innovative solutions. Should you have any further questions or comments, please do not hesitate to let us know. We are here to assist you in every way we can. Once again, thank you for choosing NEAM Technologies. We eagerly anticipate connecting with you soon!
