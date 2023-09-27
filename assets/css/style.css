@@ -1311,3 +1311,107 @@ section {
   color: #fff;
 }
  
+/*--------------------------------------------------------------
+# text block
+--------------------------------------------------------------*/
+.text-block {
+  padding: 30px;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+
+/* Add this CSS rule to reduce the margin on the h2 element inside .text-block */
+.text-block h2 {
+  margin-top: 0 !important; /* Add !important to ensure it takes precedence */
+}
+
+/*--------------------------------------------------------------
+# selection general left
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title-left {
+  text-align: left;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #191919;
+  position: relative;
+  z-index: 2;
+}
+ 
+.section-title-left span {
+  position: absolute;
+  top: 30px;
+  color: #f4f4f4;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+ 
+.section-title-left p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+ 
+@media (max-width: 575px) {
+  .section-title-left h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+ 
+  .section-title-left span {
+    font-size: 38px;
+  }
+}
+
+/*--------------------------------------------------------------
+# job block
+--------------------------------------------------------------*/
+.job-block-container {
+  background-color: #f2f2f2; /* Background color for the container */
+  padding: 20px; /* Padding around the container */
+  border: 1px solid #ccc; /* Border to separate the container */
+  font-size: 16px; /* Font size */
+  line-height: 1.5; /* Line height for spacing */
+  margin-bottom: 10px; /* Add margin between job blocks */
+}
+
+.job-block {
+  margin-bottom: 20px; /* Add margin between individual job listings */
+}
+
+.job-block a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Change link color */
+}
+
+/*--------------------------------------------------------------
+# job block
+--------------------------------------------------------------*/
+/* Style for the dotted list */
+ul.filled-dots {
+  list-style-type: disc; /* Use filled-in dots (discs) */
+  list-style-position: inside; /* Place dots inside the list items */
+}
+
+/* Optional: Add some padding to list items for better visual appearance */
+ul.filled-dots li {
+    padding-left: 20px; /* Adjust the padding as needed */
+}
