@@ -1402,16 +1402,73 @@ section {
   color: #333; /* Change link color */
 }
 
-/*--------------------------------------------------------------
-# job block
---------------------------------------------------------------*/
-/* Style for the dotted list */
-ul.filled-dots {
-  list-style-type: disc; /* Use filled-in dots (discs) */
-  list-style-position: inside; /* Place dots inside the list items */
+/* CSS for job blocks */
+.job-block {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-/* Optional: Add some padding to list items for better visual appearance */
-ul.filled-dots li {
-    padding-left: 20px; /* Adjust the padding as needed */
+.job-block h2 {
+  font-size: 24px;
+  margin-top: 10px;
 }
+
+.job-block p {
+  margin-bottom: 10px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .job-block {
+    margin-bottom: 20px;
+  }
+}
+
+/* CSS for job containers */
+.job-container {
+  display: flex;
+  flex-direction: column; /* Display jobs vertically */
+}
+
+/* CSS for job blocks */
+.job-block {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Hover transition effect for background-color and color */
+}
+
+.job-block:hover {
+  background-color: #e72323 !important; /* Highlighted background color on hover */
+  color: #fdfdfd !important; /* Text color on hover */
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .job-block {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# job application block
+--------------------------------------------------------------*/
+#job-application {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Adjust this value as needed */
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+}
+
