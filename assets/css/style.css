@@ -1458,17 +1458,39 @@ section {
 # job application block
 --------------------------------------------------------------*/
 #job-application {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh; /* Adjust this value as needed */
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
 }
 
-.form-group {
+.job-form {
   text-align: left;
 }
 
-.form-group label {
-  display: block;
+.job-form .form-group {
+  margin-bottom: 20px;
 }
 
+.job-form label {
+  font-weight: bold;
+}
+
+.job-form input[type="text"],
+.job-form input[type="email"],
+.job-form select,
+.job-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.job-form .apply-button {
+  text-align: center;
+}
