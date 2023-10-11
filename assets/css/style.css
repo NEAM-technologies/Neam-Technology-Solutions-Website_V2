@@ -1153,6 +1153,10 @@ section {
   margin-bottom: 30px;
 }
  
+#footer .footer-top .footer-links h2 {
+  color: #fff;
+  text-decoration: none;
+}
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
