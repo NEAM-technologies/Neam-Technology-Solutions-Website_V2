@@ -1439,12 +1439,15 @@ section {
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Hover transition effect for background-color and color */
+  transition: border-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Add transition for border color, text color, transform, and box shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow */
 }
 
 .job-block:hover {
-  background-color: #e72323 !important; /* Highlighted background color on hover */
-  color: #fdfdfd !important; /* Text color on hover */
+  border-color: #cc1616 !important; /* Red border color on hover */
+  color: #333 !important; /* Keep the original text color on hover */
+  transform: translateY(-5px); /* Move the block up by 5 pixels on hover */
+  box-shadow: 0 0 20px rgba(231, 35, 35, 0.4); /* Increase box shadow on hover */
 }
 
 /* Responsive CSS */
