@@ -26,11 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  Author: Myles Joubert
-  Filename: inner-page.html
-  ======================================================== -->
 </head>
 
 <body>
@@ -39,8 +34,10 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+        <i class="bi bi-envelope-fill"></i><a href="mailto:
+        neamtechnologies@gmail.com">
+        neamtechnologies@gmail.com</a>
+      
       </div>
       <div class="social-links d-none d-md-block">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -54,43 +51,46 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">NEAM</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+       <h1 class="logo"><a href="index.html">NEAM TECH</a></h1> 
+      <!-- Image Logo
+       <a href="index.html" class="logo"><img src="assets/img/NEAM top logo.png" alt="" class="img-fluid"></a>  -->
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Leadership</a></li>
+          <li><a class="nav-link" href="inner-page.html">Login</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
   </header><!-- End Header -->
+  <!--==================Start of login page=====================-->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="process_login.php" method="post"> <!-- Replace "process_login.php" with your server-side login processing script -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Log In">
+    </form>
+  </div>
+</body>
+</html>
+<!--==================Start of login page=====================-->
 
   <main id="main">
 
@@ -100,9 +100,9 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Inner Page</li>
+          <li>Login page</li>
         </ol>
-        <h2>Inner Page</h2>
+        <h2>Login</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
@@ -110,7 +110,7 @@
     <section class="inner-page">
       <div class="container">
         <p>
-          Example inner page template
+          Please enter your username and password to access your account.
         </p>
       </div>
     </section>
@@ -122,73 +122,36 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Day</h3>
+              <h3>NEAM Technologies</h3>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <!--<strong>Phone:</strong> +1 5589 55488 55<br>-->
+                <strong>Email:</strong> neamtechnologies@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/neamtech" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/neam-technology-solutions/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/NEAM_Tech" class="twitter"><i class="bx bxl-twitter"></i></a>
               </div>
             </div>
           </div>
-
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h2>Useful Links</h2>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Leadership</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="inner-page.html">Login</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Application Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">System Automation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Social Media</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Digital Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
+          <div class="container">
+            <div class="copyright">
+               <strong><span>NEAM Technology Solutions, L.L.C</span></strong>.
+            </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>NEAM</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        Designed by <a href="">NEAM TECH</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+        </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
