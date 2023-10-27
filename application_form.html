@@ -75,64 +75,88 @@
     </div>
   </header>
 
-<!-- app start-->. <!--Re use this a temp for other apps if you have questions ask Elikem or Myleys should send PhP to Email from temp -->
-</head>
-<section id="job-application" class="container text-center">
-  <h1>Job Application</h1>
-  <form action="app_submission.php" method="post" class="job-form">
-    <div class="form-group">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="experience">Years of Experience:</label>
-      <select id="experience" name="experience" required>
-        <option value="0-1">0-1 years</option>
-        <option value="2-5">2-5 years</option>
-        <option value="6-10">6-10 years</option>
-        <option value="10+">10+ years</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="service">Can you legally Work in the US:</label>
-      <select name="service" id="service" class="w-100" style="margin-bottom: 10px;">
-        <option value="service1">No</option>
-        <option value="service2">Yes</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="service">Are you a protected veteran:</label>
-      <select name="service" id="service" class="w-100" style="margin-bottom: 10px;">
-        <option value="service1">No</option>
-        <option value="service2">Yes</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="service">Are you Disabled:</label>
-      <select name="service" id="service" class="w-100" style="margin-bottom: 10px;">
-        <option value="service1">No</option>
-        <option value="service2">yes</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="resume">Upload Resume:</label>
-      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-    </div>
-    <div class="form-group">
-      <label for="cover-letter">Cover Letter:</label>
-      <textarea id="cover-letter" name="cover-letter" rows="5"></textarea>
-    </div>
-    <div class="apply-button">
-      <button type="submit" style="background-color: #cc1616; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;">Submit</button>
-    </div>
-  </form>
-</section>
- <!-- app end--> 
-</main>
+          <!-- ======= Application section ======= -->
+          <section id="application-form">
+            <h2>Job Application Form</h2>
+            <p>Please be sure to fill out all required fields. <span>*</span> Indicates a required field.</p>
+        
+            <!-- Resume/CV Upload -->
+            <label for="resume">Upload your resume/CV (max size: 5MB)<span>*</span></label>
+            <input type="file" id="resume" name="resume" required>
+        
+            <!-- Address Section -->
+            <h3>Address</h3>
+            <label for="address1">Address (1)<span>*</span></label>
+            <input type="text" id="address1" name="address1" required>
+        
+            <label for="country">Country<span>*</span></label>
+            <input type="text" id="country" name="country" required>
+        
+            <label for="address2">Address (2)</label>
+            <input type="text" id="address2" name="address2">
+        
+            <label for="city">City<span>*</span></label>
+            <input type="text" id="city" name="city" required>
+        
+            <label for="state">State/Province<span>*</span></label>
+            <input type="text" id="state" name="state" required>
+        
+            <label for="zipcode">Zip/Postal Code<span>*</span></label>
+            <input type="text" id="zipcode" name="zipcode" required>
+        
+            <button id="add-address">Add More (Address)</button>
+        
+            <!-- How did you hear about us? -->
+            <label for="hear-about-us">How did you hear about us?</label>
+            <input type="text" id="hear-about-us" name="hear-about-us">
+        
+            <!-- Education Section -->
+            <h3>Education</h3>
+            <label for="school">School<span>*</span></label>
+            <input type="text" id="school" name="school" required>
+        
+            <label for="field-of-study">Field of Study<span>*</span></label>
+            <input type="text" id="field-of-study" name="field-of-study" required>
+        
+            <label for="degree">Degree<span>*</span></label>
+            <input type="text" id="degree" name="degree" required>
+        
+            <label for="degree-completed">Degree Completed</label>
+            <input type="text" id="degree-completed" name="degree-completed">
+        
+            <button id="add-education">Add More</button>
+        
+            <!-- Submit Button -->
+            <button id="submit-button" type="submit">Submit</button>
+        
+            <!-- Privacy Statement -->
+            <h3>NEAM Technology Solutions Global Privacy Statement for Job Applicants</h3>
+            <p>Candidate Acknowledgment:</p>
+            <p>I understand that my completion of an Application for Employment does not obligate NEAM Technology Solutions to employ me or offer me a job.</p>
+        
+            <!-- Candidate Questions -->
+            <h3>Candidate Questions</h3>
+            <p>What are the top 3 factors for selecting your next employer?<span>*</span></p>
+            <input type="text" id="factors" name="factors" required>
+        
+            <p>Which is your preferred social/technical connect?<span>*</span></p>
+            <input type="text" id="social-connect" name="social-connect" required>
+        
+            <!-- Job Specific Questions -->
+            <h3>Job Specific Questions</h3>
+            <p>Please share your targeted base salary in USD (providing a range is acceptable).<span>*</span></p>
+            <input type="text" id="base-salary" name="base-salary" required>
+        
+            <p>Will you now or in the future require sponsorship for an employment visa status?<span>*</span></p>
+            <label for="visa-sponsorship-yes">Yes</label>
+            <input type="radio" id="visa-sponsorship-yes" name="visa-sponsorship" value="Yes">
+            <label for="visa-sponsorship-no">No</label>
+            <input type="radio" id="visa-sponsorship-no" name="visa-sponsorship" value="No">
+            <br>
+            <label for="visa-status">If Yes, please provide which visa status.</label>
+            <input type="text" id="visa-status" name="visa-status">
+          </section>
+          <!-- =======End application section ======= -->
 
 <footer id="footer">
   <div class="footer-top">
@@ -194,7 +218,7 @@
   </div>
   <div class="container">
     <div class="copyright">
-       <strong><span>NEAM Technology Solutions, L.L.C</span></strong>.
+        <strong><span>NEAM Technology Solutions, L.L.C</span></strong>.
     </div>
   </div>
 </footer>

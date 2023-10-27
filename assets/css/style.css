@@ -1501,3 +1501,20 @@ section {
 .job-form .apply-button {
   text-align: center;
 }
+
+/*--------------------------------------------------------------
+# Page spacing block
+--------------------------------------------------------------*/
+.spacing {
+  margin: 20px 0; /* Add margin for spacing */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/*--------------------------------------------------------------
+# Top paragraph spacing block
+--------------------------------------------------------------*/
+.top-paragraph {
+  margin: 40px 0;
+  padding: 0;
+}
+
